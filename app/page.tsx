@@ -1,17 +1,17 @@
 "use client"
 
 import { useState } from "react"
-import { Header } from "./components/header"
-import { Sidebar } from "./components/sidebar"
-import { MainVideo } from "./components/main-video"
-import { ChatPanel } from "./components/chat-panel"
-import { HomePage } from "./components/home-page"
-import { UserCenter } from "./components/user-center/user-center"
-import { StreamerDashboard } from "./components/streamer-dashboard/streamer-dashboard"
-import { GiftEffectsManager } from "./components/gift-effects/gift-effects-manager"
-import { LanguageProvider } from "./lib/language-manager"
-import { RealNameVerification } from "./components/verification/real-name-verification"
-import { Button } from "./components/ui/button"
+import { Header } from "../components/header"
+import { Sidebar } from "../components/sidebar"
+import { MainVideo } from "../components/main-video"
+import { ChatPanel } from "../components/chat-panel"
+import { HomePage } from "../components/home-page"
+import { UserCenter } from "../components/user-center/user-center"
+import { StreamerDashboard } from "../components/streamer-dashboard/streamer-dashboard"
+import { GiftEffectsManager } from "../components/gift-effects/gift-effects-manager"
+import { LanguageProvider } from "../lib/language-manager"
+import { RealNameVerification } from "../components/verification/real-name-verification"
+import { Button } from "../components/ui/button"
 
 export default function LivePlatform() {
   const [currentPage, setCurrentPage] = useState<"home" | "live" | "streamer-dashboard">("home")
